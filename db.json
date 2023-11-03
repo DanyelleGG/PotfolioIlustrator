@@ -1,0 +1,21 @@
+{
+  "admin": [
+    {
+      "id": 1,
+      "title": "Artista",
+      "author": "Emanuelle",
+      "email": "email@email.com",
+      "senha": "senhalogin"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
