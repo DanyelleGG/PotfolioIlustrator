@@ -1,16 +1,8 @@
 import {Box, Button, Center, FormControl, HStack, Heading, Input, Link, VStack, Text, Flex} from 'native-base'
-import api from './servicos/api';
+
 
 export default function Login({navigation}) {
-function Busca(){
-  api.get('/admin').then(
-    response => {
-      console.log(response.data)
-    }
-  ).catch(error=>{
-    console.log(error)
-  })
-}
+
 
   return <>
     <Flex background={"#9492FF"}>

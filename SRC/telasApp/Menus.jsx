@@ -15,7 +15,7 @@ const Menus = ( {children} ) => {
                 
                 <IconButton  onPress={() => navigation.navigate('Gerenciamento')}
                     icon={<Image 
-                        source={require('./assets/menu.png')}
+                        source={require('../assets/menu.png')}
                         style={{ 
                             width: 30, 
                             height: 30, 
@@ -27,7 +27,7 @@ const Menus = ( {children} ) => {
                 <View position="absolute" left="61%" ml={-20} zIndex={1}>
                     <IconButton  onPress={() => navigation.navigate('Administrador')}
                         icon={<Image
-                            source={require('./assets/Logo.jpeg')}
+                            source={require('../assets/Logo.jpeg')}
                             style={{ 
                                 borderRadius: 20,
                                 width: 40, 
@@ -49,21 +49,21 @@ const Menus = ( {children} ) => {
             <HStack justifyContent="space-between" alignItems="center">
                 <IconButton onPress={() => navigation.navigate('Gerenciamento')}
                     icon={<Image
-                        source={require('./assets/pesquisa.png')}
+                        source={require('../assets/pesquisa.png')}
                         style={{ width: 30, height: 30 }}
                         alt="Alternate Text"
                     />}
                 />          
                 <IconButton onPress={() => navigation.navigate('Clientes')}
                     icon={<Image
-                        source={require('./assets/pessoas.png')}
+                        source={require('../assets/pessoas.png')}
                         style={{ width: 30, height: 30 }}
                         alt="Alternate Text"
                     />}
                 />
                 <IconButton onPress={() => navigation.navigate('Administrador')}
                     icon={<Image
-                        source={require('./assets/pessoa.png')}
+                        source={require('../assets/pessoa.png')}
                         style={{ width: 30, height: 30 }}
                         alt="Alternate Text"
                     />}

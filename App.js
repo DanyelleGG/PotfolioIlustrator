@@ -1,23 +1,24 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import TelaAbertura from './SRC/TeladeApresentacao';
-import Login from './SRC/Login';
-import Cadastro from './SRC/Cadastro';
-import Gerenciamento from './SRC/Gerenciamento';
-import Adicionar from './SRC/Adicionar';
-import Clientes from './SRC/Clientes';
-import dadosCliente from './SRC/dadosCliente';
-import Administrador from './SRC/Administrador';
+import TelaAbertura from './SRC/telasApp/TeladeApresentacao';
+import Login from './SRC/telasApp/Login';
+import Cadastro from './SRC/telasApp/Cadastro';
+import Gerenciamento from './SRC/telasApp/Gerenciamento';
+import Adicionar from './SRC/telasApp/Adicionar';
+import Clientes from './SRC/telasApp/Clientes';
+import dadosCliente from './SRC/modais/dadosCliente';
+import Administrador from './SRC/telasApp/Administrador';
+import InfoCliente from './SRC/telasApp/InformacaoCliente';
+import InfoProjeto from './SRC/telasApp/InformacaoProjeto';
 import { NativeBaseProvider, StatusBar } from 'native-base';
-import { TEMAS } from './SRC/estilos/temas';
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <NativeBaseProvider theme={TEMAS}>
-      <StatusBar backgroundColor={TEMAS.colors.fundo}/>
+    <NativeBaseProvider>
+      <StatusBar/>
         <NavigationContainer>
           <Stack.Navigator initialRouteName="TeladeApresentacao">
             <Stack.Screen name="TelaAbertura" component={TelaAbertura} options={{ headerShown: false }}  />
@@ -28,6 +29,8 @@ export default function App() {
             <Stack.Screen name="Administrador" component={Administrador} />
             <Stack.Screen name="Clientes" component={Clientes} />
             <Stack.Screen name="dadosCliente" component={dadosCliente} />
+            <Stack.Screen name="InfoCliente" component={InfoCliente} />
+            <Stack.Screen name="InfoProjeto" component={InfoProjeto} />
           </Stack.Navigator>
         </NavigationContainer>
     </NativeBaseProvider>

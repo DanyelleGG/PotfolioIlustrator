@@ -40,7 +40,7 @@ const Administrador = () => {
               </FormControl>
     
         <Box alignSelf={'flex-start'} mt={2}>
-            <Image size={200} borderRadius={0} source={require('./assets/designer.png')} alt="Foto do administrador" />
+            <Image size={200} borderRadius={0} source={require('../assets/designer.png')} alt="Foto do administrador" />
         </Box>
 
     <Divider />
@@ -54,7 +54,7 @@ const Administrador = () => {
     <TextArea borderRadius={'20'} > Olá! Sou Maria Emanuelle, uma artista visual apaixonada e ilustradora profissional. Desde pequena, sempre fui encantada por cores, formas e histórias, e, com o passar do tempo, decidi transformar essa paixão em minha profissão. Vivo para criar imagens que contam histórias, provocam emoções e trazem conceitos à vida.
         </TextArea>   
         <Box alignSelf={'flex-start'} mt={2}>
-            <Image size={100} borderRadius={0} source={require('./assets/designer.png')} alt="Foto do administrador" />
+            <Image size={100} borderRadius={0} source={require('../assets/designer.png')} alt="Foto do administrador" />
         </Box>     
 
          

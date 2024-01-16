@@ -55,7 +55,7 @@ const TelaAbertura = () => {
                 backgroundColor="#9492FF" 
             />
             <Center zIndex={4}>
-                <Image size={200} borderRadius={170} source={require('./assets/Logo.jpeg')} alt="logo do APP portfólio" />
+                <Image size={200} borderRadius={170} source={require('../assets/Logo.jpeg')} alt="logo do APP portfólio" />
             </Center>
             <Text fontSize="30px" color="#702DFF" zIndex={4}>PORTFÓLIO</Text>
         </Box>
